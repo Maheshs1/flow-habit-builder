@@ -1,26 +1,154 @@
-@import "tailwindcss";
+/* global.css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 1. Import Tailwind CSS in CSS‑first mode */
+@import 'tailwindcss';
+
+/* 2. Define your entire theme via @theme */
+@theme {
+  /* Color palette */
+  --color-background: hsl(220 14% 96%);
+  --color-foreground: hsl(220 14% 8%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(220 14% 8%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(220 14% 8%);
+  --color-primary: hsl(240 80% 65%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-primary-glow: hsl(250 100% 80%);
+  --color-secondary: hsl(260 25% 95%);
+  --color-secondary-foreground: hsl(240 15% 25%);
+  --color-muted: hsl(220 13% 91%);
+  --color-muted-foreground: hsl(220 13% 45%);
+  --color-accent: hsl(280 60% 88%);
+  --color-accent-foreground: hsl(280 60% 15%);
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  --color-border: hsl(220 13% 91%);
+  --color-input: hsl(220 13% 91%);
+  --color-ring: hsl(240 80% 65%);
+  --color-zen: hsl(200 15% 92%);
+  --color-zen-foreground: hsl(200 15% 25%);
+  --color-flow: hsl(180 25% 88%);
+  --color-flow-foreground: hsl(180 25% 15%);
+  /* Sidebar-specific colors */
+  --color-sidebar: hsl(0 0% 98%);
+  --color-sidebar-foreground: hsl(240 5.3% 26.1%);
+  --color-sidebar-primary: hsl(240 5.9% 10%);
+  --color-sidebar-primary-foreground: hsl(0 0% 98%);
+  --color-sidebar-accent: hsl(240 4.8% 95.9%);
+  --color-sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --color-sidebar-border: hsl(220 13% 91%);
+  --color-sidebar-ring: hsl(217.2 91.2% 59.8%);
+
+  /* Gradient backgrounds */
+  --bg-gradient-primary: linear-gradient(
+    135deg,
+    hsl(240 80% 65%),
+    hsl(280 70% 70%)
+  );
+  --bg-gradient-zen: linear-gradient(
+    180deg,
+    hsl(200 25% 96%),
+    hsl(220 20% 92%)
+  );
+  --bg-gradient-flow: linear-gradient(
+    90deg,
+    hsl(180 30% 85%),
+    hsl(200 25% 90%)
+  );
+
+  /* Shadows */
+  --shadow-zen: 0 4px 30px -4px hsl(240 50% 80% / 0.3);
+  --shadow-glow: 0 0 40px hsl(240 80% 65% / 0.4);
+
+  /* Transition timing */
+  --transition-zen: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-flow: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Radius */
+  --radius: 0.5rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Animations */
+  --animate-zen-pulse: zen-pulse 3s ease-in-out infinite;
+  --animate-flow-in: flow-in 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  --animate-glow: glow 2s ease-in-out infinite alternate;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 3. Keyframes definitions */
+@keyframes zen-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes flow-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+  }
+  100% {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* 4. Custom utilities for gradients, shadows, radius, and animations */
+@layer utilities {
+  /* Background gradients */
+  .bg-gradient-primary {
+    background-image: var(--bg-gradient-primary);
+  }
+  .bg-gradient-zen {
+    background-image: var(--bg-gradient-zen);
+  }
+  .bg-gradient-flow {
+    background-image: var(--bg-gradient-flow);
+  }
+
+  /* Shadows */
+  .shadow-zen {
+    box-shadow: var(--shadow-zen);
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Border radius */
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+
+  /* Animations */
+  .animate-zen-pulse {
+    animation: var(--animate-zen-pulse);
+  }
+  .animate-flow-in {
+    animation: var(--animate-flow-in);
+  }
+  .animate-glow {
+    animation: var(--animate-glow);
+  }
 }
+

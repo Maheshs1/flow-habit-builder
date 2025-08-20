@@ -1,8 +1,16 @@
-import { FocusMode } from "@/components/FocusMode";
-import { IdentityAffirmation } from "@/components/IdentityAffirmation";
-import { RewardVisualization } from "@/components/RewardVisualization";
+import zenHero from "@/zen-hero.jpg";
+import { ActionTrigger } from '@/components/ActionTrigger'
+import { ActivityFlow } from '@/components/ActivityFlow'
+import { AvoidanceStrategies } from '@/components/AvoidanceStrategies'
+import { DistractionSelection } from '@/components/DistractionSelection'
+import { FlowingLoader } from '@/components/FlowingLoader'
+import { FocusMode } from '@/components/FocusMode'
+import { IdentityAffirmation } from '@/components/IdentityAffirmation'
+import { RewardVisualization } from '@/components/RewardVisualization'
+import { ZeigarnikTracker } from '@/components/ZeigarnikTracker'
+import React from 'react'
 
-export default function Home() {
+const FocusModePage = () => {
   return (
     <div className="min-h-screen bg-gradient-zen">
       {/* Hero Section */}
@@ -36,5 +44,7 @@ export default function Home() {
       {/* <ActivityFlow /> */}
       {/* <FocusMode identity='Entrepreneur' /> */}
     </div>
-  );
+  )
 }
+
+export default FocusModePage

@@ -1,0 +1,114 @@
+{
+  "phone": {
+    "id": "phone",
+    "title": "Phone Freedom Protocol",
+    "description": "Create physical and digital barriers to mindless phone usage",
+    "timeToImplement": "2 minutes",
+    "icon": "Shield",
+    "steps": [
+      "Place phone in another room or drawer",
+      "Turn on Do Not Disturb mode",
+      "Remove social media apps from home screen",
+      "Set specific times for checking messages",
+      "Use airplane mode during focus sessions"
+    ]
+  },
+  "tv": {
+    "id": "tv",
+    "title": "Screen Discipline System",
+    "description": "Transform your entertainment consumption into intentional choices",
+    "timeToImplement": "3 minutes",
+    "icon": "Target",
+    "steps": [
+      "Hide the TV remote in inconvenient location",
+      "Unplug streaming devices",
+      "Set a specific viewing schedule",
+      "Choose content beforehand, not while browsing",
+      "Create a \"no-screen\" zone in your workspace"
+    ]
+  },
+  "snacking": {
+    "id": "snacking",
+    "title": "Mindful Consumption Reset",
+    "description": "Replace mindless eating with intentional nourishment",
+    "timeToImplement": "5 minutes",
+    "icon": "Zap",
+    "steps": [
+      "Remove trigger foods from immediate reach",
+      "Prepare healthy alternatives in advance",
+      "Drink water before eating anything",
+      "Set designated eating times",
+      "Practice the 5-minute hunger check"
+    ]
+  },
+  "messaging": {
+    "id": "messaging",
+    "title": "Communication Boundaries",
+    "description": "Control when and how you engage with messages",
+    "timeToImplement": "3 minutes",
+    "icon": "Shield",
+    "steps": [
+      "Turn off all message notifications",
+      "Set specific times for checking messages",
+      "Use auto-replies explaining your response time",
+      "Leave non-essential group chats",
+      "Put messaging apps in hard-to-reach folders"
+    ]
+  },
+  "instagram": {
+    "id": "instagram",
+    "title": "Social Media Detox",
+    "description": "Break the infinite scroll addiction cycle",
+    "timeToImplement": "2 minutes",
+    "icon": "Target",
+    "steps": [
+      "Log out of all accounts",
+      "Delete apps from phone completely",
+      "Use website blockers on all devices",
+      "Replace with productive alternatives",
+      "Find an accountability partner"
+    ]
+  },
+  "youtube": {
+    "id": "youtube",
+    "title": "Intentional Learning",
+    "description": "Transform random watching into purposeful education",
+    "timeToImplement": "4 minutes",
+    "icon": "Zap",
+    "steps": [
+      "Clear watch history and turn off recommendations",
+      "Subscribe only to educational channels",
+      "Set a specific learning goal before opening",
+      "Use timer for maximum watch time",
+      "Take notes while watching to stay engaged"
+    ]
+  },
+  "shopping": {
+    "id": "shopping",
+    "title": "Purchase Control System",
+    "description": "Eliminate impulse buying and mindless browsing",
+    "timeToImplement": "3 minutes",
+    "icon": "Shield",
+    "steps": [
+      "Remove saved payment methods from browsers",
+      "Uninstall shopping apps",
+      "Create a 24-hour rule for all purchases",
+      "Make a specific shopping list before browsing",
+      "Block shopping websites during work hours"
+    ]
+  },
+  "gaming": {
+    "id": "gaming",
+    "title": "Gaming Discipline",
+    "description": "Control gaming time and make it intentional",
+    "timeToImplement": "5 minutes",
+    "icon": "Target",
+    "steps": [
+      "Set specific gaming hours in advance",
+      "Use parental controls or time limits",
+      "Keep gaming devices in inconvenient locations",
+      "Find offline hobbies to replace gaming time",
+      "Join communities focused on productive activities"
+    ]
+  }
+}

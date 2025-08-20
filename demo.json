@@ -1,0 +1,109 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "title": "2-Minute Start (Tiny Action Kickoff)",
+      "time": 2,
+      "description": "Name the single smallest physical action toward your top task (e.g., open doc, type title). Start a 120-second timer and do only that. This lowers activation energy (Tiny Habits), exploits the Zeigarnik effect, and jump-starts dopamine for momentum."
+    },
+    {
+      "id": 2,
+      "title": "5-Minute If–Then Setup + Environment Reset",
+      "time": 5,
+      "description": "Write one If–Then plan for the biggest expected obstacle (If X occurs, then I will Y). Clear your space: close extra tabs, silence phone, put it out of reach, open only needed files. This uses implementation intentions and stimulus control to prevent derailment."
+    },
+    {
+      "id": 3,
+      "title": "10-Minute WOOP + Next 3 Micro-Steps",
+      "time": 10,
+      "description": "Do WOOP: Wish (1 sentence), Outcome (why it matters), Obstacle (inner/outer), Plan (If obstacle, then action). Then list the next 3 micro-steps with verbs and a simple Definition of Done. Mental contrasting + if–then improves follow-through."
+    },
+    {
+      "id": 4,
+      "title": "30-Minute Deep Work Sprint (25/5)",
+      "time": 30,
+      "description": "Work 25 minutes on one deliverable; capture distractions on paper instead of switching; finish with a 5-minute break (move, water, sunlight). Use website/app blockers. This timebox minimizes attentional residue and boosts throughput."
+    }
+  ],
+  "avoids": [
+    {
+      "toAvoid": "Multitasking and context switching",
+      "howToAvoid": [
+        "Go full-screen on the work app and keep only one tab/window.",
+        "Use a distraction list: when an urge arises, jot it down and return after the sprint."
+      ]
+    },
+    {
+      "toAvoid": "Starting with vague tasks",
+      "howToAvoid": [
+        "Rewrite tasks as the next visible physical action (verb + object, e.g., 'Draft 3 bullet points for landing page').",
+        "Add a one-line Definition of Done before you start."
+      ]
+    },
+    {
+      "toAvoid": "Phone and notification pulls",
+      "howToAvoid": [
+        "Place phone in another room or a timed box; enable Do Not Disturb/Focus mode.",
+        "Block social/news sites during sprints with app/website blockers."
+      ]
+    },
+    {
+      "toAvoid": "Perfectionism before progress",
+      "howToAvoid": [
+        "Set an MVP bar: 'good enough to ship a draft in 25 minutes'.",
+        "Use a time cap: ship the draft at the end of the sprint, then iterate later."
+      ]
+    },
+    {
+      "toAvoid": "Unbounded work sessions that drain willpower",
+      "howToAvoid": [
+        "Always set a visible timer for each sprint and pre-schedule the stop.",
+        "When it gets tough, lower the bar by 50% and continue for 2 more minutes before deciding to quit."
+      ]
+    },
+    {
+      "toAvoid": "Email/Slack first habit loop",
+      "howToAvoid": [
+        "Start the day with the 2-Minute Start on your priority before opening inbox/Slack.",
+        "Batch communications into 2–3 windows and keep them off during deep work."
+      ]
+    },
+    {
+      "toAvoid": "Boredom/restlessness spikes (common in ADHD)",
+      "howToAvoid": [
+        "Do a 60–90 second state change (quick walk, 10 squats, cold water splash) before restarting.",
+        "Use urge surfing: notice the urge like a wave, breathe for 90 seconds, and let it pass without acting."
+      ]
+    },
+    {
+      "toAvoid": "Sleep/caffeine patterns that sabotage focus",
+      "howToAvoid": [
+        "Cap caffeine by mid-afternoon and anchor a consistent sleep window.",
+        "Use morning light exposure and a short walk to stabilize circadian alertness."
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "title": "Physical micro-reward",
+      "desc": "Before starting, picture standing up after the sprint, shoulders relaxing, taking a satisfying sip of your favorite drink, and a 2–3 minute sunlight walk. Feel the bodily ease.",
+      "type": "physical"
+    },
+    {
+      "title": "Mental progress checkmark",
+      "desc": "Visualize ticking a checkbox, moving a task card to 'Done', and watching your weekly progress bar advance. See the concrete artifact you created (draft, lines of code, sent email).",
+      "type": "mental"
+    },
+    {
+      "title": "Emotional relief and pride",
+      "desc": "Imagine the relief of having shipped the draft and the warm pride of keeping a promise to yourself. Hear yourself say, 'I did the hard part.'",
+      "type": "emotional"
+    },
+    {
+      "title": "Social acknowledgment",
+      "desc": "See yourself posting a quick update to your team or customer and receiving a 'Nice work!' reaction or appreciative reply. Feel the connection and credibility gain.",
+      "type": "social"
+    }
+  ]
+}
+
