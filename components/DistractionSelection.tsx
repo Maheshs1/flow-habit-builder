@@ -243,10 +243,10 @@ export const DistractionSelection = ({ identity, onComplete }: DistractionSelect
               <Card className="p-8 bg-gradient-primary text-center">
                 <div className="space-y-6">
                   <div className="text-6xl animate-zen-pulse">🎯</div>
-                  <h3 className="text-3xl font-light text-foreground">
+                  <h3 className="text-3xl font-semibold text-white ">
                     Your commitment as a {identity}
                   </h3>
-                  <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                  <p className="text-xl text-white opacity-70 max-w-2xl mx-auto">
                     "I choose my identity over instant gratification. I am stronger than my distractions."
                   </p>
                 </div>
